@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Search</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Raleway|Encode+Sans+Expanded|Noto+Serif" rel="stylesheet">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>">
+    <link rel="stylesheet" type="text/css" href="/static/base.css">
+    <link rel="stylesheet" type="text/css" href="/static/search_form.css">
+    <link rel="stylesheet" type="text/css" href="/static/result.css">
+</head>
+<body>
+<div class="outer-wrap">
+    <div class="inner-wrap">
+        <header class="header">
+            <div class="menu">
+                <p class="title">Zinvest</p>
+                <div class="menu-btn">
+                    <i class="ion-navicon-round"></i>
+                </div>
+            </div>
+            <nav class="nav-bar" id="nav-bar">
+                <a class="nav" href="#">REalDeal</a>
+                <a class="nav" href="#">10EntConnect</a>
+                <a class="nav" href="#">Main10Connect</a>
+                <a class="nav" href="#">Careers</a>
+            </nav>
+        </header>
+        {% block body %}
+        {% endblock %}
+        <footer class="footer">
+            <div class="info-wrap">
+                <a class="info" href="#">About Us</a>
+                <a class="info" href="#">Info</a>
+                <a class="info" href="#">Contact</a>
+            </div>
+        </footer>
+    </div>
+</div>
+<script src="/static/main.js"></script>
+</body>
+</html>

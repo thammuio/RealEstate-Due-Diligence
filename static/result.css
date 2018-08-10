@@ -1,0 +1,118 @@
+/*================= Content ======================*/
+
+
+.address{
+    text-align: center;
+    width: 100%;
+    font-size: 1.8em;
+    margin-bottom: 40px;
+
+}
+
+.links{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.section{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.link-wrap{
+    min-width: 210px;
+    flex-basis: 21%;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0,.7);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
+
+
+.link-wrap:hover .visit{
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    cursor: pointer;
+}
+
+.visit{
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0,.5);
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    color: white;
+    font-size: 1.3em;
+
+}
+
+
+.logo{
+    font-size: 1.3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 2;
+}
+
+.link{
+    border-top: 2px solid rgba(0, 0, 0,.3);
+    background-color: rgba(255, 255, 255,.6);
+    font-size: 1.4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+/*================= Button backgrounds ======================*/
+
+.zillow{
+    background-color: rgb(0, 116, 228);
+}
+.trulia{
+    background-color: rgb(33, 192, 99);
+}
+.homefacts{
+    background-color: rgb(154, 206, 239);
+}
+.homesnap{
+    background-color: white;
+}
+.realtor {
+    background-color: rgb(236, 9, 39);
+}
+.google{
+    background-color: white;
+}
+.realitybid{
+    background-color: rgb(233, 24, 55);
+}
+.netronline{
+    background-color: white;
+}
+.rentfax{
+    background-color: white;
+}
+.rentometer{
+    background-color: white;
+}
+
+

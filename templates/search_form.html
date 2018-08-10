@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <div class="content">
+        <div class="search-wrap">
+            <form class="search-form" method="post" action="{{ url_for ('search') }}">
+                <input name="address" value="{{ address }}" class="search search-input"
+                       placeholder="Enter address">
+                <input name="zip" value="{{ zip_code }}" class="search search-input"
+                       placeholder="City/State or ZIP">
+                <button class="search search-btn" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+    {% if context %}
+        {% include 'result.html' %}
+    {% endif %}
+{% endblock %}

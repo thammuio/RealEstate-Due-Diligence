@@ -1,0 +1,143 @@
+<div class="content">
+    <div class="address">Search for "{{ fulladdress }}" on other websites</div>
+    <div class="links">
+        <div class="section">
+            <!----- Zillow search input URL structure ----->
+            <a href="https://www.zillow.com/homes/for_sale/{{ fulladdress }}+_rb/" target="_blank" class="link-wrap">
+            <!--------------------------------------------->
+                <div class="visit">Visit zillow.com</div>
+                <div class="logo zillow">
+                    <img src="/static/img/zillow100.png">
+                </div>
+                <div class="link">
+                    <p>Zillow</p>
+                </div>
+            </a>
+            <!----- Trulia search input URL structure ----->
+            <a href="https://www.trulia.com/submit_search/?
+            display_select=for_sale&search={{ fulladdress }}
+            &locationId=&locationType=&tst=h&ac_entered_query
+            =&ac_index=&propertyId=&propertyIndex=&bedFilter
+            =&bathFilter=&propertyFilter=&display=for+sale&maxPrice="
+               target="_blank" class="link-wrap trulia-btn">
+            <!--------------------------------------------->
+                <div class="visit">Visit trulia.com</div>
+                <div class="logo trulia">
+                    <img src="/static/img/trulia100.png">
+                </div>
+                <div class="link">
+                    <p>Trulia</p>
+                </div>
+            </a>
+        </div>
+        <div class="section">
+            <!----- Eppraisal search input URL structure ----->
+            <a href="http://www.eppraisal.com/home-values/property-lookup?a={{ address }}&z={{ zip_code }}&btnAddressSearch="
+                target="_blank" class="link-wrap">
+            <!------------------------------------------------>
+                <div class="visit">Visit eppraisal.com</div>
+                <div class="logo eppraisal">
+                    <img src="/static/img/eppraisal100.png">
+                </div>
+                <div class="link">
+                    <p>Eppraisal</p>
+                </div>
+            </a>
+            <!----- Bestplaces search input URL structure ----->
+            <a href="http://www.bestplaces.net/search/?q={{ fulladdress }}" target="_blank" class="link-wrap">
+            <!------------------------------------------------->
+                <div class="visit">Visit bestplaces.com</div>
+                <div class="logo bestplaces">
+                    <img src="/static/img/bestplaces100.png">
+                </div>
+                <div class="link">
+                    <p>Best Places</p>
+                </div>
+            </a>
+        </div>
+        <div class="section">
+            <a href="{{ url_for('homefacts') }}" target="_blank" class="link-wrap">
+                <div class="visit">Visit homefacts.com</div>
+                <div class="logo homefacts">
+                    <img src="/static/img/homefacts100.png">
+                </div>
+                <div class="link">
+                    <p>Home Facts</p>
+                </div>
+            </a>
+            <a href="https://www.homesnap.com" target="_blank" class="link-wrap">
+                <div class="visit">Visit homesnap.com</div>
+                <div class="logo homesnap">
+                    <img src="/static/img/homesnap100.png">
+                </div>
+                <div class="link">
+                    <p>Home Snap</p>
+                </div>
+            </a>
+        </div>
+        <div class="section">
+            <!----- Realtybid search input URL structure ----->
+            <a href="https://www.realtybid.com/search-results?q={{ fulladdress }}" target="_blank" class="link-wrap">
+            <!--------------------------------------------->
+                <div class="visit">Visit realtybid.com</div>
+                <div class="logo realtybid">
+                    <img src="/static/img/realtybid100.png">
+                </div>
+                <div class="link">
+                    <p>Realtybid</p>
+                </div>
+            </a>
+            <!----- Google Maps search input URL structure ----->
+            <a href="http://www.google.com/maps/search/{{ fulladdress }}" target="_blank" class="link-wrap">
+            <!-------------------------------------------------->
+                <div class="visit">Visit google.com</div>
+                <div class="logo google">
+                    <img src="/static/img/google_maps100.png">
+                </div>
+                <div class="link">
+                    <p>Google Maps</p>
+                </div>
+            </a>
+        </div>
+        <div class="section">
+            <a href="{{ url_for('realtytrac') }}" target="_blank" class="link-wrap">
+                <div class="visit">Visit realtytrac.com</div>
+                <div class="logo realtytrac">
+                    <img src="/static/img/realtytrac100.png">
+                </div>
+                <div class="link">
+                    <p>Realtytrac</p>
+                </div>
+            </a>
+            <a href="http://publicrecords.netronline.com/" target="_blank" class="link-wrap">
+                <div class="visit">Visit netronline.com</div>
+                <div class="logo netronline">
+                    <img src="/static/img/netronline100.png">
+                </div>
+                <div class="link">
+                    <p>Netr Online</p>
+                </div>
+            </a>
+        </div>
+        <div class="section">
+            <a href="https://www.rentfaxpro.com" target="_blank" class="link-wrap">
+                <div class="visit">Visit rentfaxpro.com</div>
+                <div class="logo rentfax">
+                    <img src="/static/img/rentfaxpro100.png">
+                </div>
+                <div class="link">
+                    <p>Rent Fax</p>
+                </div>
+            </a>
+            <a href="http://www.rentometer.com" target="_blank" class="link-wrap">
+                <div class="visit">Visit rentometer.com</div>
+                <div class="logo rentometer">
+                    <img src="/static/img/rentometer100.png">
+                </div>
+                <div class="link">
+                    <p>Rentometer</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
